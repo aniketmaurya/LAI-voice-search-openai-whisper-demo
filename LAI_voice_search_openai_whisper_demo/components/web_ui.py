@@ -1,4 +1,3 @@
-import os
 from dataclasses import dataclass
 
 import gradio as gr
@@ -13,7 +12,6 @@ class CustomBuildConfig(L.BuildConfig):
 
 
 class LitGradio(ServeGradio):
-
     inputs = gr.components.Audio(
         source="upload", type="filepath", label="Upload your audio"
     )
